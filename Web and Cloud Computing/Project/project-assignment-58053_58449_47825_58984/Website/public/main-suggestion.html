@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixmaster - Main Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main-suggestion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MIXMASTER</a></h1>
+        <h2>Discover your next favorite cocktail with us!</h2>
+        <br/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main-suggestion.html">Our Suggestions</a></li>
+                <li><a href="cocktail-search.html">Cocktail & Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="suggestion">
+            <p>Loading suggestion...</p>
+        </section>
+        <section id="emoji">
+            <h3>Click an emoji & get a cocktail!</h3>
+            <div id="moodButtons">
+                <button class="mood-button" onclick="fetchMoodSuggestion('Happy')">🥳</button>
+                <button class="mood-button" onclick="fetchMoodSuggestion('Sad')">😁</button>
+                <button class="mood-button" onclick="fetchMoodSuggestion('Energetic')">💪</button>
+                <button class="mood-button" onclick="fetchMoodSuggestion('Relaxed')">😢</button>
+            </div>
+        </section>
+    </main>
+    <section id="ingredientSearch">
+        <h2>For other suggestions, try searching by ingredient</h2>
+        <label for="ingredientSelect">Select an Ingredient:</label>
+        <select id="ingredientSelect"></select>
+        <button id="searchButton">Search</button>
+        <div id="searchResults"></div>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>

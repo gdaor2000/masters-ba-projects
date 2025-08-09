@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixmaster - Cocktail Info</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cocktail-info.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MIXMASTER</a></h1>
+        <h2>Discover your next favorite cocktail with us!</h2>
+        <br/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main-suggestion.html">Our Suggestions</a></li>
+                <li><a href="cocktail-search.html">Cocktails & Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cocktailInfo">
+            <h2>Cocktail Information</h2>
+            <div id="cocktailInfo">
+                <p>Loading cocktail information...</p>
+            </div>
+        </section>
+    </main>
+    <div class="rating-container">
+        <section id="ratingSection">
+            <h2>Rate this Cocktail</h2>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+            </div>
+            <button id="submitRating">Submit</button>
+        </section>
+    </div>    
+    <footer>
+    </footer>
+</body>
+</html>

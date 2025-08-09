@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A website for helping out on your cocktail choices",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "node-fetch": "^2.7.0",
+    "sqlite3": "^5.1.7"
+  }
+}

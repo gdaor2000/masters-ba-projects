@@ -1,0 +1,407 @@
+/* ------------------------------
+   Global Styles
+   ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+body {
+    background-color: #FADADD; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FADADD;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #df1b7d;
+}
+
+h1 a {
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; 
+    font-weight: inherit; 
+    font-size: 90px;
+}
+
+nav ul, nav ul li {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+main section {
+    margin-bottom: 2em;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #FADADD;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* ------------------------------
+   Form Elements Styles
+   ------------------------------ */
+
+input[type="text"], button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #FADADD;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #f9c2d1;
+}
+
+#cocktailInfo {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* INDEX HTML */
+
+/* ------------------------------
+   Cocktail of the Day Section
+   (INDEX HTML)
+   ------------------------------ */
+
+#cocktailOfDaySection {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 10px; 
+}
+
+#cocktailOfDaySection img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#cocktailOfDaySection h2 {
+    font: bolder;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#cocktailOfDaySection h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#cocktailOfDaySection ul, #cocktailOfDaySection ul li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.letter-button {
+    font-size: 16px; 
+    color: #333;
+    padding: 8px;
+    margin: 0 4px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* ------------------------------
+   List of Cocktails Section
+   (INDEX Html)
+   ------------------------------ */
+
+#listOfCocktailsSection {
+    clear: both; /* Clear floats to ensure it appears below the two sections */
+}
+
+#listOfCocktails ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#listOfCocktails ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* ------------------------------
+   Emoji Mood Section
+   (Used in main-suggestion.html)
+   ------------------------------ */
+
+#emoji, #suggestion {
+    display: inline-block; 
+    vertical-align: top; 
+    width: calc(40% - 40px); 
+    box-sizing: border-box; 
+    padding: 40px; 
+    margin: 0 20px; 
+}
+
+#suggestion ul, #suggestion ul li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#moodButtons {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align: center;
+    padding: 20px;
+}
+
+.mood-button {
+    font-size: 32px; 
+    color: black; 
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-basis: 45%;
+
+}
+  
+.mood-button:hover {
+    background-color: #e2e2e2;
+    transform: scale(1.1); /* Slightly increase the size on hover for a nice effect */
+  }
+  
+/* ------------------------------
+   Ingredient Search Section
+   (Used in main-suggestion.html)
+   ------------------------------ */
+
+   #ingredientSearch {
+    margin-top: 2em;
+    text-align: center; 
+}
+
+#ingredientSelect {
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* COCKTAIL SEARCH HTML */
+
+/* Styles for search button and input */
+#searchButton, #searchInput {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px; 
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#searchButton {
+    color: #333;
+    background-color: #f9c2d1;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #f78fa7;
+    border-color: #f78fa7;
+}
+
+#searchInput {
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+/* Styles for search results */
+#searchResults {
+    margin-top: 5em;
+}
+
+#searchResults h3 {
+    font-size: 22px;
+}
+
+#searchResults img {
+    max-width: 100px;
+}
+
+#searchResults p {
+    font-size: 13px;
+}
+
+/* Common styles for lists of cocktails and search results */
+#listOfCocktails ul, #searchResults ul {
+    list-style: none;
+    padding: 0; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#listOfCocktails ul li, #searchResults ul li {
+    margin: 15px 15px 0;
+    padding: 10px; 
+    background-color: #f0f0f0;
+    border-radius: 5px; 
+    width: calc(25% - 20px); 
+}
+
+#searchResults ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Additional styles for search section layout */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* COCKTAIL INFO HTML */
+
+/* General styling for the main content */
+#cocktailInfo {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+/* Styling for images within #cocktailInfo */
+#cocktailInfo img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    max-height: 200px;
+}
+
+/* Styling for headings within #cocktailInfo */
+#cocktailInfo h2 {
+    font-weight: 600;
+    font-size: 1.5em; 
+    margin-bottom: 0.5em;
+}
+
+#cocktailInfo h3 {
+    font-size: 1.125em;
+    margin-bottom: 0.25em;
+}
+
+/* Styling for lists within #cocktailInfo */
+#cocktailInfo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#cocktailInfo ul li {
+    margin-bottom: 0.25em;
+    font-size: 1em;
+}
+
+/* Star rating with filler and */
+input[type="radio"] {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 10px; 
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+input[type="radio"] + label:before {
+    content: "☆";
+    color: #666060;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:checked ~ label:before {
+    content: "★";
+    color: #f5b301;
+}
+
+button#submitRating {
+    padding: 0.625em 1.25em;
+    border: none;
+    background-color: #df1b7d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered white box for rating section */
+#ratingSection {
+    background-color: white;
+    width: 30%;
+    margin: 2em auto;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}

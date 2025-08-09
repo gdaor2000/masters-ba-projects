@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>real_distances Module &#8212; Group_17 Adpro Project  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Data Model Module" href="data_model.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="real-distances-module">
+<h1>real_distances Module<a class="headerlink" href="#real-distances-module" title="Permalink to this heading">¶</a></h1>
+<p>The <cite>real_distances</cite> module is responsible for defining the data structures and models used in the project.</p>
+<span class="target" id="module-real_distances"></span><p>This module provides functions for performing mathematical calculations and working with data.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="real_distances.add_airports_distances">
+<span class="sig-prename descclassname"><span class="pre">real_distances.</span></span><span class="sig-name descname"><span class="pre">add_airports_distances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gaivota</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="data_model.html#data_model.Gaivota" title="data_model.Gaivota"><span class="pre">Gaivota</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#real_distances.add_airports_distances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the airports_distances dictionary with distances between all pairs of airports.</p>
+<dl class="simple">
+<dt>gaivota: Gaivota</dt><dd><p>An instance of the Gaivota class containing airport data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="real_distances.calculate_distance">
+<span class="sig-prename descclassname"><span class="pre">real_distances.</span></span><span class="sig-name descname"><span class="pre">calculate_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lat1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#real_distances.calculate_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the distance between two points on the Earth’s surface using the Haversine formula.</p>
+<dl class="simple">
+<dt>lat1: float</dt><dd><p>Latitude of the first point in degrees.</p>
+</dd>
+<dt>lon1: float</dt><dd><p>Longitude of the first point in degrees.</p>
+</dd>
+<dt>lat2: float</dt><dd><p>Latitude of the second point in degrees.</p>
+</dd>
+<dt>lon2: float</dt><dd><p>Longitude of the second point in degrees.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>distance: float</dt><dd><p>The distance between the two points in kilometers.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="real_distances.calculate_distance_between_airports">
+<span class="sig-prename descclassname"><span class="pre">real_distances.</span></span><span class="sig-name descname"><span class="pre">calculate_distance_between_airports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#real_distances.calculate_distance_between_airports" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the distance between two airports given their IATAs.</p>
+<dl class="simple">
+<dt>source: str</dt><dd><p>The IATA code of the source airport.</p>
+</dd>
+<dt>destination: str</dt><dd><p>The IATA code of the destination airport.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>distance: float</dt><dd><p>The distance between the source and destination airports in kilometers.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="real_distances.haversine_vectorized">
+<span class="sig-prename descclassname"><span class="pre">real_distances.</span></span><span class="sig-name descname"><span class="pre">haversine_vectorized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lat1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lat2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lon2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#real_distances.haversine_vectorized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the great-circle distance between two points on the Earth’s surface
+given their longitudes and latitudes using the Haversine formula.</p>
+<dl class="simple">
+<dt>lat1<span class="classifier">float</span></dt><dd><p>Latitude of the first point in degrees.</p>
+</dd>
+<dt>lon1<span class="classifier">float</span></dt><dd><p>Longitude of the first point in degrees.</p>
+</dd>
+<dt>lat2<span class="classifier">float</span></dt><dd><p>Latitude of the second point in degrees.</p>
+</dd>
+<dt>lon2<span class="classifier">float</span></dt><dd><p>Longitude of the second point in degrees.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>distance<span class="classifier">float</span></dt><dd><p>The computed distance between the two points in kilometers.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Group_17 Adpro Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="showcasenotebook.html">Show Case Notebook - Group 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_model.html">Data Model Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">real_distances Module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="data_model.html" title="previous chapter">Data Model Module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Group_17.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/real_distances.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
